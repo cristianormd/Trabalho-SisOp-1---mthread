@@ -4,9 +4,14 @@
 #ifndef THREAD_H
 #define THREAD_H
 
+
+/*TYPE DEFINITIONS*/
+
+
 /*describes the possible states of a thread*/
-enum Thread_State
+enum mThread_State
 {
+    invalid,    //a state for recently created threads
     created,    //Created means the thread has been created, but is still not ready to run
     ready,      //Ready means the thread is waiting to be scheduled for execution
     running,    //Running means the thread is running - duh
@@ -18,22 +23,24 @@ enum Thread_State
     that defines a thread, containing all the information
     needed to describe it and controll it  */
 
-typedef struct TCB
+typedef struct mTCB
 {
-    /*thread identifier code*/
-    int tid;
+    /*thread identifier code. zero is a default value for recently created TCBs. Negative number is an error
+    and positive numbers are valid tid's*/
+    int tid = 0;
 
     /*expected CPU time that this thread will use each time it's scheduled*/
-    unsigned int expected_run_time;
+    unsigned int expected_run_time = 0;
 
     /*how long this thread has been running*/
-    unsigned int current_run_time;
+    unsigned int current_run_time = 0;
 
     /*current state of this thread, description of each state in the definition of Thread_State*/
-    Thread_State current_state;
-}TCB;
+    mThread_State current_state = invalid;
+}mTCB;
 
-/*FUNCTIONS DOWN HERE */
+
+/*FUNCTION DEFINITIONS*/
 
 
 #endif
