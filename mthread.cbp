@@ -36,9 +36,6 @@
 		</Build>
 		<Unit filename="mdata.h" />
 		<Unit filename="mthread.h" />
-		<Unit filename="teste.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="thread.c">
 			<Option compilerVar="CC" />
 		</Unit>

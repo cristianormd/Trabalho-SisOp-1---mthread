@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1397926592 source:/home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/thread.c
+	"thread.h"
+
+1398105308 /home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/thread.h
+
+1398111445 source:/home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/threadlist.c
+	"threadlist.h"
+	"thread.h"
+	<stdlib.h>
+
+1398111342 /home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/threadlist.h
+	"thread.h"
+
+1398105491 source:/home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/threadlisttest.c
+	"thread.h"
+	"threadlist.h"
+	<stdlib.h>
+
+1398117694 source:/home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/dispatcher.c
+
+1398119441 source:/home/crmdias/Desktop/UFRGS/2014-1/Sistemas Operacionais I - N/Trabalho SisOp 1 - mthread/mthread.c
+
